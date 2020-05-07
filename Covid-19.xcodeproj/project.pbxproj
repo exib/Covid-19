@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A32D14D9246364560087FDC3 /* SummaryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32D14D8246364560087FDC3 /* SummaryEntity.swift */; };
 		A3C21B4824634DBB00D51319 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C21B4724634DBB00D51319 /* AppDelegate.swift */; };
 		A3C21B4A24634DBB00D51319 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C21B4924634DBB00D51319 /* SceneDelegate.swift */; };
 		A3C21B4C24634DBB00D51319 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C21B4B24634DBB00D51319 /* ViewController.swift */; };
 		A3C21B4F24634DBB00D51319 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3C21B4D24634DBB00D51319 /* Main.storyboard */; };
 		A3C21B5124634DC000D51319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3C21B5024634DC000D51319 /* Assets.xcassets */; };
 		A3C21B5424634DC000D51319 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3C21B5224634DC000D51319 /* LaunchScreen.storyboard */; };
+		A3C21B5C24634E2400D51319 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C21B5B24634E2400D51319 /* AlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A32D14D8246364560087FDC3 /* SummaryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryEntity.swift; sourceTree = "<group>"; };
 		A3C21B4424634DBB00D51319 /* Covid-19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Covid-19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3C21B4724634DBB00D51319 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3C21B4924634DBB00D51319 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		A3C21B5024634DC000D51319 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3C21B5324634DC000D51319 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3C21B5524634DC000D51319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3C21B5B24634E2400D51319 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A30C844F2464041B00FAEF5D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A3C21B4B24634DBB00D51319 /* ViewController.swift */,
+				A3C21B5B24634E2400D51319 /* AlertController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A30C84502464043500FAEF5D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A3617FA924641CE400A17F02 /* View */,
+				A3C21B4724634DBB00D51319 /* AppDelegate.swift */,
+				A3C21B4924634DBB00D51319 /* SceneDelegate.swift */,
+				A3C21B5024634DC000D51319 /* Assets.xcassets */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A32D14DA246377E60087FDC3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A32D14D8246364560087FDC3 /* SummaryEntity.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A3617FA924641CE400A17F02 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3C21B4D24634DBB00D51319 /* Main.storyboard */,
+				A3C21B5224634DC000D51319 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A3C21B3B24634DBB00D51319 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +97,9 @@
 		A3C21B4624634DBB00D51319 /* Covid-19 */ = {
 			isa = PBXGroup;
 			children = (
-				A3C21B4724634DBB00D51319 /* AppDelegate.swift */,
-				A3C21B4924634DBB00D51319 /* SceneDelegate.swift */,
-				A3C21B4B24634DBB00D51319 /* ViewController.swift */,
-				A3C21B4D24634DBB00D51319 /* Main.storyboard */,
-				A3C21B5024634DC000D51319 /* Assets.xcassets */,
-				A3C21B5224634DC000D51319 /* LaunchScreen.storyboard */,
+				A30C84502464043500FAEF5D /* Main */,
+				A30C844F2464041B00FAEF5D /* Controllers */,
+				A32D14DA246377E60087FDC3 /* Networking */,
 				A3C21B5524634DC000D51319 /* Info.plist */,
 			);
 			path = "Covid-19";
@@ -138,6 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3C21B5C24634E2400D51319 /* AlertController.swift in Sources */,
+				A32D14D9246364560087FDC3 /* SummaryEntity.swift in Sources */,
 				A3C21B4C24634DBB00D51319 /* ViewController.swift in Sources */,
 				A3C21B4824634DBB00D51319 /* AppDelegate.swift in Sources */,
 				A3C21B4A24634DBB00D51319 /* SceneDelegate.swift in Sources */,
